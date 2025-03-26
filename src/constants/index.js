@@ -21,7 +21,7 @@ import {
   CompileVortex,
   eduskill,
   express,
-  mongoDB,
+ mongodb,
   purchasekorea,
   threeD,
   chess,
@@ -49,7 +49,7 @@ export const services = [
   { title: "React", icon: reactjs },
   { title: "Node", icon: nodejs },
   { title: "Express", icon: express },
-  { title: "MongoDB", icon: mongoDB },
+  { title: "MongoDB", icon: mongodb },
 ];
 
 export const technologies = [

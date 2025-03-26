@@ -33,7 +33,7 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.png";
 import express from "./tech/express.png";
-import mongoDB from "./tech/mongodb.png";
+import mongodb from "./tech/mongodb.png";
 
 // Import common assets
 import logo from "./logo.svg";
@@ -59,7 +59,7 @@ export {
   tailwind,
   threejs,
   express,
-  mongoDB,
+  mongodb,
   weatherpedia,
   termpw,
   payloadmaster,
