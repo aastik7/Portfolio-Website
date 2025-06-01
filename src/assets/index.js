@@ -60,7 +60,6 @@ export {
   threejs,
   express,
   mongodb,
-  mongodb,
   weatherpedia,
   termpw,
   payloadmaster,

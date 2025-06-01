@@ -67,8 +67,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_r2i0by4",
-        "template_mf5x3bh",
+        "service_ehqytxp",
+        "template_g5kwzjp",
         {
           from_name: form.name,
           to_name: "Aastik Dubey",
@@ -76,7 +76,7 @@ const Contact = () => {
           to_email: "aastikdev7@gmail.com",
           message: form.message,
         },
-        "p-gXzzyvEhPaJ0XA-"
+        "qeNq8pjFMyIow3E9p"
       )
       .then(() => {
         setLoading(false);

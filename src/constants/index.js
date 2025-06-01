@@ -50,7 +50,7 @@ export const services = [
   { title: "Node", icon: nodejs },
   { title: "Express", icon: express },
   { title: "MongoDB", icon: mongodb },
-  { title: "MongoDB", icon: mongodb },
+  
 ];
 
 export const technologies = [
