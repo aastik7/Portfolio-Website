@@ -1,0 +1,223 @@
+%
+% ATS-Optimized Resume — Aastik Dubey
+% One-page, high-impact, ATS-compliant
+%
+
+\documentclass[a4paper,11pt]{article}
+
+% Essential package imports
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage[empty]{fullpage}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{fontawesome}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout — tightened for single-page fit
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.6cm, right=1.2cm, bottom=0.8cm}
+\setlength{\footskip}{4pt}
+
+% Hyperlink setup
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting — reduced spacing
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item{\small #1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0.5mm}\item
+  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\footnotesize #4} \\
+      \textit{\footnotesize #3} &  \footnotesize #2 \\
+  \end{tabular*}
+  \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[3]{
+  \vspace{0.5mm}\item
+  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} &  \\
+      \textit{\footnotesize #2} & \footnotesize #3 \\
+  \end{tabular*}
+  \vspace{-2.4mm}
+}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.3mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{1mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+
+\begin{document}
+
+% ============================================================
+% HEADER
+% ============================================================
+\begin{center}
+    {\Large\textbf{AASTIK DUBEY}}
+\end{center}
+\vspace{-4mm}
+
+\begin{center}
+    \small{
+    Gurugram, Haryana, India $|$
+    +91-821-940-2513 $|$ 
+    \href{mailto:aastikdev7@gmail.com}{aastikdev7@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/aastik-dubey-231411243/}{LinkedIn} $|$
+    \href{https://github.com/aastik7}{GitHub} $|$
+    \href{https://aastik7.github.io/Portfolio-Website/}{Portfolio}
+    }
+\end{center}
+\vspace{-6mm}
+
+% ============================================================
+% PROFESSIONAL SUMMARY
+% ============================================================
+\section{\textbf{PROFESSIONAL SUMMARY}}
+\vspace{0.5mm}
+\small{
+Full-Stack Developer with 4 years of experience building production-grade web applications in \textbf{React, Next.js, Node.js, and TypeScript}. Delivered \textbf{25--45\% performance improvements} across client projects, architected CI/CD pipelines on AWS/Azure cutting deploy times by 40\%, and shipped a live \textbf{B2B pharmaceutical platform} at 99.9\% uptime. Experienced in integrating \textbf{AI/LLM-powered features} via the \textbf{OpenAI API} and building intelligent, data-driven user experiences. Strong foundation in API design, cloud infrastructure, and agile delivery.
+}
+\vspace{-3mm}
+
+% ============================================================
+% EXPERIENCE
+% ============================================================
+\section{\textbf{EXPERIENCE}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Owonto}{Remote -- Chandigarh, India}
+{Full-Stack Web Developer}{Aug 2022 -- Present}
+\resumeItemListStart
+\resumeItem{Architected and optimized \textbf{12+ RESTful APIs} in Node.js/Express, reducing response time by \textbf{25\%} for 10K+ daily requests}
+\resumeItem{Built CI/CD pipelines on \textbf{AWS (EC2, S3) and Azure}, cutting deployment cycle time by \textbf{40\%} and eliminating manual release errors}
+\resumeItem{Developed responsive front-ends in \textbf{React and TypeScript}, achieving \textbf{95+ Lighthouse score} and 100\% client sign-off}
+\resumeItem{Reduced page load time by \textbf{35\%} via code-splitting, lazy loading, image optimization, and CDN caching}
+\resumeItem{Integrated \textbf{OpenAI API} to add AI-assisted features (smart search suggestions, automated content tagging), improving user engagement by \textbf{18\%}}
+\resumeItem{Delivered features \textbf{15\% ahead of schedule} collaborating cross-functionally in \textbf{Agile/Scrum} sprints}
+\resumeItem{Engineered mobile-first UIs in \textbf{React and TailwindCSS}, improving mobile usability by \textbf{45\%} across 5 client projects}
+\resumeItem{Ran \textbf{A/B tests} via Google Optimize, driving \textbf{22\% conversion lift} on key landing pages}
+\resumeItem{Implemented \textbf{SEO optimizations} (structured data, meta tags, Core Web Vitals), boosting organic traffic by \textbf{35\%} in 3 months}
+\resumeItem{Streamlined design-to-code handoff with UX team, reducing iteration cycles by \textbf{20\%}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-2mm}
+
+% ============================================================
+% PROJECTS
+% ============================================================
+\section{\textbf{PROJECTS}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+{HippoKart — Full-Stack E-commerce Marketplace}
+{Next.js, React, TypeScript, MongoDB, tRPC, Stripe, OpenAI API}
+{GitHub: \href{https://github.com/aastik7/hippokart}{github.com/aastik7/hippokart}}
+\resumeItemListStart
+\resumeItem{Built multi-vendor marketplace with \textbf{Stripe payment integration} processing \textbf{\$8K+/month} in transactions}
+\resumeItem{Integrated \textbf{OpenAI API} for AI-powered product recommendations and auto-generated product descriptions, boosting cross-sells by \textbf{20\%}}
+\resumeItem{Implemented \textbf{real-time notifications} via WebSockets, increasing user engagement by \textbf{35\%}}
+\resumeItem{Engineered \textbf{full-text search} with MongoDB Atlas Search, cutting product discovery time by \textbf{40\%}}
+\resumeItemListEnd
+
+\resumeProject
+{RenoPharma — B2B Pharmaceutical Distribution Platform}
+{React.js, Node.js, Express, MongoDB Atlas, Vercel}
+{Live: \href{https://renopharmaceuticals.com/}{renopharmaceuticals.com}}
+\resumeItemListStart
+\resumeItem{Shipped \textbf{production B2B SaaS platform} for pharma manufacturers, digitizing order and supply chain workflows}
+\resumeItem{Deployed \textbf{serverless architecture on Vercel} with MongoDB Atlas achieving \textbf{99.9\% uptime} and auto-scaling}
+\resumeItem{Implemented \textbf{role-based access control (RBAC)} and encrypted data pipelines meeting industry compliance standards}
+\resumeItemListEnd
+
+\resumeProject
+{Real-Time Device Tracker — Location Sharing Platform}
+{Node.js, Express, Socket.IO, Leaflet.js}
+{GitHub: \href{https://github.com/aastik7/Realtime-Device-Tracker}{github.com/aastik7/Realtime-Device-Tracker}}
+\resumeItemListStart
+\resumeItem{Built \textbf{real-time geolocation tracking} via WebSockets, supporting \textbf{50+ concurrent users} at 99.9\% uptime}
+\resumeItem{Achieved \textbf{sub-500ms latency} by optimizing Socket.IO event handling with delta-based data transfer}
+\resumeItem{Added \textbf{secure link sharing} with end-to-end encryption via unique, time-limited URLs}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+% ============================================================
+% TECHNICAL SKILLS
+% ============================================================
+\section{\textbf{TECHNICAL SKILLS}}
+\vspace{-0.4mm}
+\begin{itemize}[leftmargin=*, noitemsep, nolistsep]
+  \item \textbf{Languages:} JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL
+  \item \textbf{Front-End:} React.js, Next.js, Redux, TailwindCSS, GSAP, Responsive Design, Accessibility (WCAG)
+  \item \textbf{Back-End:} Node.js, Express.js, RESTful APIs, GraphQL, WebSockets (Socket.IO)
+  \item \textbf{AI/ML Integration:} OpenAI API, LLM prompt engineering, AI-powered feature development, Generative AI
+  \item \textbf{Databases:} MongoDB, MongoDB Atlas, PostgreSQL, Prisma ORM
+  \item \textbf{Cloud \& DevOps:} AWS (EC2, S3, Lambda), Azure, Vercel, Docker, CI/CD (GitHub Actions)
+  \item \textbf{Testing \& Tools:} Jest, React Testing Library, Git, Webpack, Vite, Postman, Jira
+\end{itemize}
+\vspace{-4mm}
+
+% ============================================================
+% EDUCATION
+% ============================================================
+\section{\textbf{EDUCATION}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Maharaja Agrasen University}{Himachal Pradesh, India}
+{Bachelor of Technology in Computer Science \& Engineering | CGPA: 8.02 / 10}{2018 -- 2022}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+% ============================================================
+% CERTIFICATIONS (Uncomment when applicable)
+% ============================================================
+% \section{\textbf{CERTIFICATIONS}}
+% \vspace{-0.4mm}
+% \begin{itemize}[leftmargin=*, noitemsep, nolistsep]
+%   \item AWS Certified Cloud Practitioner — Amazon Web Services, 2025
+%   \item Meta Front-End Developer Professional Certificate — Coursera, 2024
+% \end{itemize}
+% \vspace{-4mm}
+
+\end{document}
